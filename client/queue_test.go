@@ -5,9 +5,10 @@ package client
 import (
 	"context"
 	"fmt"
-	"github.com/stretchr/testify/mock"
 	"testing"
 	"time"
+
+	"github.com/stretchr/testify/mock"
 
 	"github.com/kozmod/omni/external"
 	uuid "github.com/satori/go.uuid"
