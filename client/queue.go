@@ -67,7 +67,7 @@ func (c *ExternalServerQueue) startProcess(ctx context.Context) {
 					c.errCh <- fmt.Errorf("error accured on items [%v]: %w", processed, err)
 					return
 				}
-				_ = <-time.NewTicker(wait).C
+				<-time.NewTicker(wait).C
 			}
 		}
 	}()
